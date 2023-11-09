@@ -1,3 +1,4 @@
+import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
@@ -11,6 +12,7 @@ import { Testimonials } from '@/components/Testimonials'
 export default function Home() {
   return (
     <>
+      <Banner />
       <Header />
       <main>
         <Hero />
