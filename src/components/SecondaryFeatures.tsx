@@ -20,10 +20,10 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Preventative Care',
+    summary: 'This is a summary of the title that should be two lines',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -39,7 +39,7 @@ const features: Array<Feature> = [
               gradientUnits="userSpaceOnUse"
             >
               <stop offset=".194" stopColor="#fff" />
-              <stop offset={1} stopColor="#6692F1" />
+              <stop offset={1} stopColor="#9C27B0" />
             </linearGradient>
           </defs>
           <path
@@ -54,11 +54,10 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Inventory',
-    summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+    name: 'Preventative Care',
+    summary: 'This is a summary of the title that should be two lines',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -82,11 +81,10 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Contacts',
-    summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+    name: 'Preventative Care',
+    summary: 'This is a summary of the title that should be two lines',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -123,7 +121,7 @@ function Feature({
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          isActive ? 'bg-[#9C27B0]' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -133,7 +131,7 @@ function Feature({
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-[#9C27B0]' : 'text-slate-600',
         )}
       >
         {feature.name}
@@ -229,16 +227,17 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-36 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            This could be a title section introducing the three pillars
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            This is a description of what might three pillars be and why they
+            are important. This is content leading into each pillar specifically
+            defined just below it.
           </p>
         </div>
         <FeaturesMobile />

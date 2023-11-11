@@ -2,57 +2,56 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
-
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'Do you offer COVID-19 vaccinations?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Yes, we provide COVID-19 vaccinations. Please contact us to schedule your appointment or to learn more about the vaccine availability and eligibility.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Can I get my lab results online?',
+      answer:
+        'Absolutely, our patient portal provides access to your lab results as soon as they are available. You can log in with your credentials to view your medical information securely.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'How do I make an appointment?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'You can make an appointment by calling our front desk or by using our online scheduling system available on our website.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'What insurance plans do you accept?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'We accept most major insurance plans. Please check our website for a detailed list or contact our billing department for confirmation.',
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'What are your operating hours?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'Our clinic is open Monday to Friday from 8 am to 6 pm. We also offer emergency services on weekends.',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+      question: 'Do you have pediatric services?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Yes, we have a dedicated pediatric department to cater to the medical needs of children from infancy through adolescence.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'Can I refill my prescription online?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'Yes, you can request a prescription refill through our patient portal or by contacting our pharmacy directly during working hours.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Do you offer telemedicine consultations?',
+      answer:
+        'Yes, we offer telemedicine services for a variety of healthcare needs. You can book a virtual visit through our patient portal or by calling our office.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'What should I bring to my first appointment?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Please bring a photo ID, your insurance card, any medical records that may be relevant, and a list of any medications you are currently taking.',
     },
   ],
 ]

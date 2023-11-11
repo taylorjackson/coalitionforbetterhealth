@@ -4,10 +4,10 @@ import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { Team } from '@/components/Team'
+import { Location } from '@/components/Location'
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
-        <Testimonials />
-        <Pricing />
+        <Team />
         <Faqs />
+        <Location />
       </main>
       <Footer />
     </>

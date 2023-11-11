@@ -50,8 +50,7 @@ const products = [
   },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Call Us', href: '#contact-us', icon: PhoneIcon },
 ]
 const company = [
   {
@@ -154,7 +153,7 @@ export function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid grid-cols-1 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -292,14 +291,7 @@ export function Header() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
+                <div className="py-6"></div>
               </div>
             </div>
           </div>
