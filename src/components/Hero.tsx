@@ -44,19 +44,19 @@ export function Hero() {
               }}
             />
           </div>
+
           <div className="overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-12 lg:px-8 lg:pt-12">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    This is your impact statement
+                    Dedicated to quality healthcare
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    This is a description of your impact statement like why does
-                    it matter. This is a description of your impact statement
-                    like why does it matter.This is a description of your impact
-                    statement like why does it matter.This is a description of
-                    your impact statement like why does it matter.
+                    We are empowering doctors the best care to all, through our
+                    network clinical based physicians. It is critically
+                    important to promote evidence-based policy reforms for
+                    better patient outcomes.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
