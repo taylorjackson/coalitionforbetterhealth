@@ -103,6 +103,32 @@ export function Faqs() {
             </li>
           ))}
         </ul>
+
+        <div className="pt-20">
+          <label
+            htmlFor="message"
+            className="block text-lg font-semibold leading-6 text-slate-900"
+          >
+            Submit a question
+          </label>
+          <div className="mt-2.5">
+            <textarea
+              name="message"
+              id="message"
+              rows={2}
+              className="block w-full rounded-md border-0 bg-white/50 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#9C27B0] sm:text-sm sm:leading-6"
+              defaultValue={''}
+            />
+          </div>
+        </div>
+        <div className="mt-8 flex justify-end">
+          <button
+            type="submit"
+            className="rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#9C27B0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9C27B0]"
+          >
+            Send Question
+          </button>
+        </div>
       </Container>
     </section>
   )

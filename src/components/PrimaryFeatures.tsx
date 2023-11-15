@@ -2,15 +2,15 @@ import { UserGroupIcon, HeartIcon } from '@heroicons/react/20/solid'
 
 const features = [
   {
-    name: 'Our Mission',
+    name: 'Key Point 1',
     description:
-      'Our mission is constantly improve our qualifications to be able to heal according to global standards.',
+      'This is the text for key point 1 and shouldnt be any longer than 2 or 3 sentences. This is the text for key point 1 and shouldnt be any longer than 2 or 3 sentences.',
     icon: HeartIcon,
   },
   {
-    name: 'Great Experience',
+    name: 'Key Point 2',
     description:
-      'Thanks to our experience, we have gained what is most valuable, i.e. patient trust and their positive recommendations.',
+      'This is the text for key point 2 and shouldnt be any longer than 2 or 3 sentences. This is the text for key point 1 and shouldnt be any longer than 2 or 3 sentences.',
     icon: UserGroupIcon,
   },
 ]
@@ -23,17 +23,16 @@ export function PrimaryFeatures() {
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-[#9C27B0]">
-                Dear patient
+                Dear audience
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                 A step to better care which involves good doctors
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 This can be a long section describing or a direct message to
-                your audience like why the patient matters or something like
-                that. This can be a long section describing or a direct message
-                to your audience like why the patient matters or something like
-                that.
+                your audience like why they matter or something like that. This
+                can be a long section describing or a direct message to your
+                audience like why they matter or something like that.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

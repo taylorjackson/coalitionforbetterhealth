@@ -25,7 +25,7 @@ const features: Array<Feature> = [
     name: 'Advocacy',
     summary: 'This is a summary of the title that should be two lines',
     description:
-      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good. This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good. This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -179,6 +179,7 @@ function FeaturesDesktop() {
           <Tab.List className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
+                id={feature.id}
                 key={feature.summary}
                 feature={{
                   ...feature,
@@ -199,6 +200,7 @@ function FeaturesDesktop() {
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
+                  id={feature.id}
                   key={feature.summary}
                   className={clsx(
                     'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',

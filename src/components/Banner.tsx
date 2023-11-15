@@ -76,7 +76,7 @@ export function Banner() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="inline h-4 w-4"
+              className="mb-0.5 inline h-4 w-4"
             >
               <path
                 strokeLinecap="round"
