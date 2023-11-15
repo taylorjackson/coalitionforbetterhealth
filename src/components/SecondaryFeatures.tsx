@@ -11,6 +11,7 @@ import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 interface Feature {
+  id?: string
   name: React.ReactNode
   summary: string
   description: string
@@ -20,10 +21,11 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Preventative Care',
+    id: 'advocacy',
+    name: 'Advocacy',
     summary: 'This is a summary of the title that should be two lines',
     description:
-      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good. This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -54,10 +56,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Preventative Care',
+    id: 'service',
+    name: 'Service',
     summary: 'This is a summary of the title that should be two lines',
     description:
-      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -81,10 +84,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Preventative Care',
+    id: 'learning',
+    name: 'Learning',
     summary: 'This is a summary of the title that should be two lines',
     description:
-      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
+      'This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.This is a longer form description about the title and why it is important.  Ideally it should take up about three lines or two sentences to be looking good.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -148,7 +152,7 @@ function FeaturesMobile() {
   return (
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
       {features.map((feature) => (
-        <div key={feature.summary}>
+        <div key={feature.summary} id={feature.id}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
@@ -175,6 +179,7 @@ function FeaturesDesktop() {
           <Tab.List className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
+                id={feature.id}
                 key={feature.summary}
                 feature={{
                   ...feature,
@@ -195,6 +200,7 @@ function FeaturesDesktop() {
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
+                  id={feature.id}
                   key={feature.summary}
                   className={clsx(
                     'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',
@@ -227,7 +233,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-36 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-48 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
