@@ -5,41 +5,29 @@ import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s - Doctors For Better Health',
-    default: 'Doctors For Better Health',
-  },
-  description:
-    'Doctors For Better Health is a coalition designed to improve health care in British Columbia.',
+    title: {
+        template: '%s - Doctors For Better Health',
+        default: 'Doctors For Better Health',
+    },
+    description: 'Doctors For Better Health is a coalition designed to improve health care in British Columbia.',
 }
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-inter',
 })
 
 const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-lexend',
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html
-      lang="en"
-      className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
-        inter.variable,
-        lexend.variable,
-      )}
-    >
-      <body className="flex h-full flex-col">{children}</body>
-    </html>
-  )
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="en" className={clsx('h-full scroll-smooth bg-white antialiased', inter.variable, lexend.variable)}>
+            <body className="flex h-full flex-col">{children}</body>
+        </html>
+    )
 }
