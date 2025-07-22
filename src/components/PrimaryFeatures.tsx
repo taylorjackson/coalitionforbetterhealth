@@ -46,28 +46,34 @@ export function PrimaryFeatures() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative flex items-start justify-end lg:order-first">
+                    <div className="relative flex items-center justify-end lg:order-first">
+                        {/* Main image */}
                         <Image
-                            src="https://quanticalabs.com/wp_themes/medicenter-dentist/files/2021/05/image_01.jpg"
+                            src="https://images.pexels.com/photos/19550907/pexels-photo-19550907.jpeg"
                             alt="Healthcare professionals working together"
                             width={912}
                             height={608}
-                            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                            className="w-[40rem] max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[48rem]"
                         />
-                        <Image
-                            src="https://quanticalabs.com/wp_themes/medicenter-dentist/files/2021/05/image_02.jpg"
-                            alt="Patient care and support"
-                            width={320}
-                            height={240}
-                            className="absolute -left-12 bottom-0 w-[20rem] rounded-lg shadow-lg"
-                        />
-                        <Image
-                            src="https://quanticalabs.com/wp_themes/medicenter-dentist/files/2021/05/image_03.jpg"
-                            alt="Medical innovation and technology"
-                            width={320}
-                            height={240}
-                            className="absolute -bottom-48 -right-12 w-[20rem] rounded-lg shadow-lg"
-                        />
+                        {/* Overlay images in a more pleasing collage */}
+                        <div className="absolute -left-16 bottom-8 flex flex-col gap-6 sm:gap-8">
+                            <Image
+                                src="https://images.pexels.com/photos/8830496/pexels-photo-8830496.jpeg"
+                                alt="Patient care and support"
+                                width={220}
+                                height={160}
+                                className="w-56 rounded-lg border-4 border-white shadow-lg"
+                            />
+                        </div>
+                        <div className="absolute -right-10 top-56 flex flex-col gap-6 sm:gap-8">
+                            <Image
+                                src="https://images.pexels.com/photos/6436252/pexels-photo-6436252.jpeg"
+                                alt="Medical innovation and technology"
+                                width={220}
+                                height={160}
+                                className="w-56 rounded-lg border-4 border-white shadow-lg"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

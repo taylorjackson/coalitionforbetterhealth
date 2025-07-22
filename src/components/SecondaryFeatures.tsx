@@ -6,16 +6,13 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 interface Feature {
     id?: string
     name: React.ReactNode
     summary: string
     description: string
-    image: ImageProps['src']
+    image: string
     icon: React.ComponentType
 }
 
@@ -26,7 +23,7 @@ const features: Array<Feature> = [
         summary: 'We foster partnerships between patients and care providers for life-long collaboration.',
         description:
             'Our approach centers on building strong, lasting relationships between patients and healthcare providers. We believe that when patients and doctors work together as partners, better health outcomes follow. This collaborative model ensures that care decisions are shared, informed, and aligned with patient values and medical expertise.',
-        image: screenshotProfitLoss,
+        image: 'https://images.pexels.com/photos/7979439/pexels-photo-7979439.jpeg',
         icon: function ReportingIcon() {
             let id = useId()
             return (
@@ -54,7 +51,7 @@ const features: Array<Feature> = [
         summary: 'We lead reforms that improve access, accountability, and value in care delivery.',
         description:
             'We champion a healthcare system that prioritizes quality, accessibility, and accountability. Our reforms focus on creating seamless care pathways, reducing wait times, and ensuring that every patient receives the right care at the right time. We work to eliminate barriers and create a system that serves all Canadians equitably.',
-        image: screenshotInventory,
+        image: 'https://images.pexels.com/photos/7551677/pexels-photo-7551677.jpeg',
         icon: function InventoryIcon() {
             return (
                 <>
@@ -79,7 +76,7 @@ const features: Array<Feature> = [
         summary: 'Our model promotes continuous improvement based on evidence and community needs.',
         description:
             'We believe in a healthcare system that learns and evolves. By collecting and analyzing data, listening to community feedback, and applying evidence-based practices, we create a system that continuously improves. This learning approach ensures that our healthcare system adapts to changing needs and delivers better outcomes for all Canadians.',
-        image: screenshotContacts,
+        image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg',
         icon: function ContactsIcon() {
             return (
                 <>
@@ -132,7 +129,14 @@ function FeaturesMobile() {
                     <div className="relative mt-10 pb-10">
                         <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
                         <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                            <Image className="w-full" src={feature.image} alt="" sizes="52.75rem" />
+                            <Image
+                                className="w-full"
+                                src={feature.image}
+                                alt=""
+                                sizes="52.75rem"
+                                width={844}
+                                height={600}
+                            />
                         </div>
                     </div>
                 </div>
@@ -180,7 +184,14 @@ function FeaturesDesktop() {
                                     aria-hidden={featureIndex !== selectedIndex}
                                 >
                                     <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                                        <Image className="w-full" src={feature.image} alt="" sizes="52.75rem" />
+                                        <Image
+                                            className="w-full"
+                                            src={feature.image}
+                                            alt=""
+                                            sizes="52.75rem"
+                                            width={844}
+                                            height={600}
+                                        />
                                     </div>
                                 </Tab.Panel>
                             ))}

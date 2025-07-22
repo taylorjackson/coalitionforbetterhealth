@@ -53,10 +53,10 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <div className="hidden bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:w-1/2">
                     <Image
                         alt="Healthcare professionals working together"
-                        src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+                        src="https://images.pexels.com/photos/8376248/pexels-photo-8376248.jpeg"
                         className="h-full w-full object-cover"
                         fill
                     />
