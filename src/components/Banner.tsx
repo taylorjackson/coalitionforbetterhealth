@@ -1,6 +1,25 @@
+'use client'
+
+import { useScrollPosition } from '@/hooks/useScrollPosition'
+
 export function Banner() {
+    const scrollY = useScrollPosition()
+
+    // Calculate opacity based on scroll position
+    // Start fading at 50px scroll, completely hidden at 150px
+    const fadeStart = 50
+    const fadeEnd = 150
+    const opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart))
+
+    // Hide banner completely when scrolled past fadeEnd
+    const isVisible = scrollY < fadeEnd
+
+    if (!isVisible) {
+        return null
+    }
+
     return (
-        <div className="max-h-10">
+        <div className="fixed left-0 right-0 top-0 z-50 max-h-10 transition-opacity duration-300" style={{ opacity }}>
             <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
                 <div
                     className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -32,21 +51,8 @@ export function Banner() {
                         <svg viewBox="0 0 2 2" className="mx-2 inline h-1 w-1 fill-current md:mx-4" aria-hidden="true">
                             <circle cx={1} cy={1} r={1} />
                         </svg>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="mb-0.5 inline h-4 w-4"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                            />
-                        </svg>
-                        <span className="px-1">(123) - 456 - 7890</span>
+
+                        <span className="px-1">info@coalitionforbetterhealth.ca</span>
                     </div>
                 </div>
 
@@ -58,7 +64,7 @@ export function Banner() {
 
 export function Banner2() {
     return (
-        <div className="max-h-10">
+        <div className="fixed left-0 right-0 top-0 z-50 max-h-10">
             <div className="relative isolate flex gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
                 <div
                     className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -102,24 +108,6 @@ export function Banner2() {
                             />
                         </svg>
                         <strong className="px-1 font-semibold">125-8120 Cook Rd, Richmond B.C.</strong>
-                        <svg viewBox="0 0 2 2" className="mx-2 inline h-1 w-1 fill-current md:mx-4" aria-hidden="true">
-                            <circle cx={1} cy={1} r={1} />
-                        </svg>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="inline h-4 w-4"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                            />
-                        </svg>
-                        <span className="px-1">(123) - 456 - 7890</span>
                     </p>
                 </div>
                 <div className="flex flex-1 justify-end"></div>

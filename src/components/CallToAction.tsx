@@ -1,11 +1,15 @@
+import Image from 'next/image'
+
 export function CallToAction() {
     return (
         <div className="relative bg-[#E1BEE7]/30">
             <div className="relative h-80 overflow-hidden md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
-                <img
+                <Image
                     className="h-full w-full object-cover"
                     src="https://imgs.search.brave.com/UuhUsidhsCzMkcOcMVKiA68SpevXD7Ovo_qBXljIpCg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MzI5Mzg5MTEwNzkt/MWIwNmFjN2NlZWM3/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4Tkh4/OFpHOWpkRzl5SlRJ/d1kyOXVjM1ZzZEh4/bGJud3dmSHd3Zkh4/OE1BPT0mdz0xMDAw/JnE9ODA"
                     alt="Healthcare transformation"
+                    fill
+                    style={{ objectFit: 'cover' }}
                 />
                 <svg
                     viewBox="0 0 926 676"
@@ -46,17 +50,17 @@ export function CallToAction() {
                     </p>
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                         <a
-                            href="#"
+                            href="mailto:info@coalitionforbetterhealth.ca"
                             className="inline-flex rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#7B1FA2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9C27B0]"
                         >
                             Join the Coalition
                         </a>
-                        <a
+                        {/* <a
                             href="#"
                             className="inline-flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#9C27B0] shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         >
                             Donate Now
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

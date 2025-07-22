@@ -17,7 +17,10 @@ export default function NotFound() {
                     >
                         Return Home
                     </a>
-                    <a href="mailto:drcwang@icloud.com" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a
+                        href="mailto:info@coalitionforbetterhealth.ca"
+                        className="text-sm font-semibold leading-6 text-gray-900"
+                    >
                         Contact Us <span aria-hidden="true">→</span>
                     </a>
                 </div>

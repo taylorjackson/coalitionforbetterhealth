@@ -3,15 +3,15 @@ const timeline = [
         name: 'Organization Founded',
         description:
             'A group of passionate healthcare professionals came together to address the growing challenges in our healthcare system, driven by a shared vision of patient-centered care.',
-        date: 'Mar 2023',
-        dateTime: '2023-03',
+        date: 'Mar 2021',
+        dateTime: '2021-03',
     },
     {
         name: 'Community Stakeholder Engagement',
         description:
             'Launched extensive consultations with patients, families, healthcare providers, and community leaders across BC to understand local healthcare needs and priorities.',
-        date: 'Jun 2023',
-        dateTime: '2023-06',
+        date: 'Jun 2022',
+        dateTime: '2022-06',
     },
     {
         name: 'Grassroots Movement Begins',
@@ -24,8 +24,8 @@ const timeline = [
         name: 'Official Community Launch',
         description:
             'Formally launched our organization with a comprehensive framework for healthcare transformation, ready to advocate for systemic change across Canada.',
-        date: 'Jan 2024',
-        dateTime: '2024-01',
+        date: 'Jan 2025',
+        dateTime: '2025-01',
     },
 ]
 

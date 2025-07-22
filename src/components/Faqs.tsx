@@ -14,7 +14,7 @@ const faqs = [
         },
         {
             question: 'How do I make an appointment?',
-            answer: 'You can make an appointment by calling our front desk or by using our online scheduling system available on our website.',
+            answer: 'You can make an appointment by using our online scheduling system available on our website.',
         },
     ],
     [
@@ -34,11 +34,11 @@ const faqs = [
     [
         {
             question: 'Can I refill my prescription online?',
-            answer: 'Yes, you can request a prescription refill through our patient portal or by contacting our pharmacy directly during working hours.',
+            answer: 'Yes, you can request a prescription refill through our patient portal.',
         },
         {
             question: 'Do you offer telemedicine consultations?',
-            answer: 'Yes, we offer telemedicine services for a variety of healthcare needs. You can book a virtual visit through our patient portal or by calling our office.',
+            answer: 'Yes, we offer telemedicine services for a variety of healthcare needs. You can book a virtual visit through our patient portal.',
         },
         {
             question: 'What should I bring to my first appointment?',

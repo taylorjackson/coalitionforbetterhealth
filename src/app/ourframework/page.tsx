@@ -234,7 +234,7 @@ export default function AdvocacyPage() {
                         <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
                             <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                    <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+                                    <h1 className="text-pretty pt-28 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
                                         Our Framework: The Model of Care
                                     </h1>
                                     <p className="text-pretty mt-8 text-lg font-medium text-gray-500 sm:text-xl/8 lg:max-w-none">
@@ -264,7 +264,7 @@ export default function AdvocacyPage() {
                         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                                 {pillars.map(pillar => (
-                                    <div key={pillar.name} className="relative pl-12">
+                                    <div key={pillar.name} className="relative pl-16">
                                         <dt className="font-semibold text-gray-900">
                                             <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-lg bg-[#9C27B0]">
                                                 <pillar.icon className="h-6 w-6 text-white" />

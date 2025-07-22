@@ -1,4 +1,4 @@
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export function Location() {
     return (
@@ -20,18 +20,7 @@ export function Location() {
                                     <span className="sr-only">Address</span>
                                     <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                                 </dt>
-                                <dd>📍 125-8120 Cook Rd, Richmond B.C. V6Y 1T9</dd>
-                            </div>
-                            <div className="flex gap-x-4">
-                                <dt className="flex-none">
-                                    <span className="sr-only">Telephone</span>
-                                    <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                                </dt>
-                                <dd>
-                                    <a className="hover:text-gray-900" href="tel:604-278-7777">
-                                        604-278-7777
-                                    </a>
-                                </dd>
+                                <dd>125-8120 Cook Rd, Richmond B.C. V6Y 1T9</dd>
                             </div>
                             <div className="flex gap-x-4">
                                 <dt className="flex-none">
@@ -39,8 +28,8 @@ export function Location() {
                                     <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                                 </dt>
                                 <dd>
-                                    <a className="hover:text-gray-900" href="mailto:info@betterhealthbc.ca">
-                                        info@betterhealthbc.ca
+                                    <a className="hover:text-gray-900" href="mailto:info@coalitionforbetterhealth.ca">
+                                        info@coalitionforbetterhealth.ca
                                     </a>
                                 </dd>
                             </div>

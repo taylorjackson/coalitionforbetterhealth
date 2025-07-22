@@ -3,21 +3,29 @@
 import { useState } from 'react'
 import { Dialog, Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import { Logo } from './Logo'
+import { useScrollPosition } from '@/hooks/useScrollPosition'
 
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const scrollY = useScrollPosition()
+
+    // Calculate header position based on scroll
+    // When banner is completely hidden (scrollY >= 150), header moves to top
+    const fadeEnd = 150
+    const headerTop = scrollY >= fadeEnd ? '0' : '2.5rem' // 2.5rem = top-10
 
     return (
-        <header className="bg-white">
+        <header
+            className="fixed left-0 right-0 z-40 border-b border-gray-200/50 bg-white/95 backdrop-blur-sm transition-all duration-300"
+            style={{ top: headerTop }}
+        >
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Doctors For Better Health</span>
-                        <img
-                            className="h-8 w-auto"
-                            src="https://quanticalabs.com/wp_themes/medicenter-dentist/files/2021/05/logo_dentist.png"
-                            alt=""
-                        />
+                        <Logo className="h-8 w-8" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -48,13 +56,9 @@ export function Header() {
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="p-6">
                         <div className="flex items-center justify-between">
-                            <a href="#" className="-m-1.5 p-1.5">
+                            <a href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Doctors For Better Health</span>
-                                <img
-                                    className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                    alt=""
-                                />
+                                <Logo className="h-8 w-8" />
                             </a>
                             <button
                                 type="button"

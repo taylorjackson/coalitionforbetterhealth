@@ -4,43 +4,44 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Banner } from '@/components/Banner'
 import Image from 'next/image'
-
-const stats = [
-    { label: 'Patients served annually', value: '10,000+' },
-    { label: 'Healthcare providers supported', value: '500+' },
-    { label: 'Communities impacted', value: '50+' },
-]
+import { StarIcon, HeartIcon, LightBulbIcon, UserGroupIcon, SparklesIcon, HomeIcon } from '@heroicons/react/24/outline'
 
 const values = [
     {
         name: 'Excellence',
         description:
             'We pursue the highest standards of performance in all areas of healthcare delivery and system transformation.',
+        icon: StarIcon,
     },
     {
         name: 'Care',
         description:
             'Compassion and respect are at the heart of our work. We center the needs of patients and communities in everything we do.',
+        icon: HeartIcon,
     },
     {
         name: 'Innovation',
         description:
             'We champion creativity and continuous improvement to transform how care is delivered and build better health systems.',
+        icon: LightBulbIcon,
     },
     {
         name: 'Collaboration',
         description:
             'We believe in the power of collaborative leadership, bringing together patients, providers, and communities to drive change.',
+        icon: UserGroupIcon,
     },
     {
         name: 'Empowerment',
         description:
             'We empower patients to take control of their health and support doctors to deliver the best possible care.',
+        icon: SparklesIcon,
     },
     {
         name: 'Community-Centered',
         description:
             'We build healthy communities by addressing urgent needs and creating sustainable, people-centered health systems.',
+        icon: HomeIcon,
     },
 ]
 
@@ -82,16 +83,6 @@ const team = [
             'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     },
 ]
-
-const footerNavigation = {
-    main: [
-        { name: 'About', href: '/about' },
-        { name: 'Resources', href: '#' },
-        { name: 'Contact', href: '#' },
-        { name: 'Privacy', href: '#' },
-        { name: 'Terms', href: '#' },
-    ],
-}
 
 export default function AboutPage() {
     return (
@@ -157,7 +148,7 @@ export default function AboutPage() {
                                         community.
                                     </p>
                                 </div>
-                                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                                <div className="mt-14 flex justify-end gap-8 pt-10 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                                     <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                                         <div className="relative">
                                             <Image
@@ -224,47 +215,24 @@ export default function AboutPage() {
                 <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
                         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                            Our Mission
+                            Our Mission & Vision
                         </h2>
-                        <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-                            <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                                <p className="text-xl/8 text-gray-600">
-                                    We are citizens committed to improving health care by leading system transformation
-                                    to save lives and resuscitate health care in BC and Canada.
-                                </p>
-                                <p className="mt-10 max-w-xl text-base/7 text-gray-700">
-                                    We empower patients and support doctors to deliver quality care through a
-                                    collaborative network with service and advocacy to meet urgent needs and build
-                                    healthy communities.
-                                </p>
-                            </div>
-                            <div className="lg:flex lg:flex-auto lg:justify-center">
-                                <dl className="w-64 space-y-8 xl:w-80">
-                                    {stats.map(stat => (
-                                        <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                                            <dt className="text-base/7 text-gray-600">{stat.label}</dt>
-                                            <dd className="text-5xl font-semibold tracking-tight text-gray-900">
-                                                {stat.value}
-                                            </dd>
-                                        </div>
-                                    ))}
-                                </dl>
-                            </div>
+                        <div className="mt-6 space-y-6">
+                            <p className="text-xl/8 text-gray-600">
+                                We are a citizen-led movement committed to transforming health care in British Columbia
+                                and across Canada. Our mission is to save lives and revitalize the health system by
+                                empowering patients, supporting doctors, and leading meaningful system reform.
+                            </p>
+                            <p className="text-lg/8 text-gray-600">
+                                Through a collaborative network rooted in service and advocacy, we work to meet urgent
+                                needs and build healthier, more resilient communities.
+                            </p>
+                            <p className="text-xl/8 text-gray-600">
+                                <strong>Our Vision</strong> is to achieve the best care for all within a Learning Health
+                                System—one that is high-performing, people-centered, accessible, evidence-based, and
+                                sustainable.
+                            </p>
                         </div>
-                    </div>
-                </div>
-
-                {/* Vision section */}
-                <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                            Our Vision
-                        </h2>
-                        <p className="mt-6 text-xl/8 text-gray-600">Best care for all in a Learning Health System.</p>
-                        <p className="mt-4 text-lg/8 text-gray-600">
-                            We envision a future where high-performing, people-centered health systems deliver
-                            accessible, evidence-based, and sustainable care.
-                        </p>
                     </div>
                 </div>
 
@@ -292,8 +260,13 @@ export default function AboutPage() {
                     </div>
                     <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         {values.map(value => (
-                            <div key={value.name}>
-                                <dt className="font-semibold text-gray-900">{value.name}</dt>
+                            <div key={value.name} className="relative pl-12">
+                                <dt className="font-semibold text-gray-900">
+                                    <div className="absolute left-0 top-0 z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-[#9C27B0]">
+                                        <value.icon className="h-5 w-5 text-white" />
+                                    </div>
+                                    {value.name}
+                                </dt>
                                 <dd className="mt-1 text-gray-600">{value.description}</dd>
                             </div>
                         ))}
