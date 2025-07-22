@@ -12,7 +12,7 @@ export function Header() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Your Company</span>
+                        <span className="sr-only">Doctors For Better Health</span>
                         <img
                             className="h-8 w-auto"
                             src="https://quanticalabs.com/wp_themes/medicenter-dentist/files/2021/05/logo_dentist.png"
@@ -34,7 +34,7 @@ export function Header() {
                     <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
                         Home
                     </a>
-                    <a href="/advocacy" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/ourframework" className="text-sm font-semibold leading-6 text-gray-900">
                         Our Framework
                     </a>
                     <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
@@ -49,7 +49,7 @@ export function Header() {
                     <div className="p-6">
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Your Company</span>
+                                <span className="sr-only">Doctors For Better Health</span>
                                 <img
                                     className="h-8 w-auto"
                                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -70,19 +70,19 @@ export function Header() {
                                 <div className="space-y-2 py-6">
                                     <a
                                         href="/"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                                     >
                                         Home
                                     </a>
                                     <a
-                                        href="/advocacy"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        href="/ourframework"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                                     >
                                         Our Framework
                                     </a>
                                     <a
                                         href="/about"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                                     >
                                         About
                                     </a>

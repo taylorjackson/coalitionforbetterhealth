@@ -13,6 +13,23 @@ import {
     BeakerIcon,
     BoltIcon,
     HomeIcon,
+    CogIcon,
+    ShieldCheckIcon,
+    AcademicCapIcon,
+    DocumentTextIcon,
+    UserGroupIcon as TeamIcon,
+    HeartIcon as PatientIcon,
+    ChartBarIcon,
+    EyeIcon,
+    WrenchScrewdriverIcon,
+    GlobeAltIcon,
+    BookOpenIcon,
+    TruckIcon as TransportIcon,
+    HomeIcon as HousingIcon,
+    LightBulbIcon,
+    ChartPieIcon,
+    ClipboardDocumentCheckIcon,
+    ClockIcon,
 } from '@heroicons/react/24/outline'
 
 const pillars = [
@@ -69,16 +86,19 @@ const enablers = [
         name: 'Shared patient records and summaries',
         description:
             'Comprehensive health information accessible to all care providers, ensuring continuity and coordination across the healthcare journey.',
+        icon: DocumentTextIcon,
     },
     {
         name: 'Seamless collaboration across providers',
         description:
             'Integrated communication systems that enable healthcare teams to work together effectively, sharing insights and coordinating care plans.',
+        icon: TeamIcon,
     },
     {
         name: 'Patient and family centered in all decisions',
         description:
             'Active involvement of patients and families in care planning, ensuring their values, preferences, and goals guide all healthcare decisions.',
+        icon: PatientIcon,
     },
 ]
 
@@ -87,41 +107,49 @@ const foundationalSupports = [
         name: 'Preventive care',
         description:
             'Proactive health interventions and screenings to prevent illness and promote wellness before problems arise.',
+        icon: EyeIcon,
     },
     {
         name: 'Public health',
         description:
             'Population-level health initiatives and disease prevention strategies that protect and improve community health.',
+        icon: ChartBarIcon,
     },
     {
         name: 'Social services',
         description:
             'Support services addressing social determinants of health, including housing assistance, food programs, and social support networks.',
+        icon: WrenchScrewdriverIcon,
     },
     {
         name: 'Community resources',
         description:
             'Local health resources, support groups, and community programs that enhance health outcomes and social connection.',
+        icon: GlobeAltIcon,
     },
     {
         name: 'Education',
         description:
             'Health literacy programs and educational initiatives that empower individuals to make informed health decisions.',
+        icon: BookOpenIcon,
     },
     {
         name: 'Transportation',
         description:
             'Accessible transportation services ensuring patients can reach healthcare appointments and essential services.',
+        icon: TransportIcon,
     },
     {
         name: 'Food security',
         description:
             'Programs and services that ensure individuals have reliable access to sufficient, affordable, and nutritious food.',
+        icon: HeartIcon,
     },
     {
         name: 'Safe housing',
         description:
             'Stable, affordable, and healthy housing options that provide a foundation for good health and wellbeing.',
+        icon: HousingIcon,
     },
 ]
 
@@ -130,21 +158,25 @@ const learningSystem = [
         name: 'Evidence-based decision-making',
         description:
             'Clinical decisions and system improvements guided by the best available research, data, and clinical expertise.',
+        icon: LightBulbIcon,
     },
     {
         name: 'Data-driven learning',
         description:
             'Continuous system improvement through collection, analysis, and application of health data and outcomes.',
+        icon: ChartPieIcon,
     },
     {
         name: 'Accountability and transparency',
         description:
             'Clear reporting on system performance, outcomes, and resource allocation to build trust and drive improvement.',
+        icon: ClipboardDocumentCheckIcon,
     },
     {
         name: 'Sustainability for the future',
         description:
             'Long-term planning and resource management to ensure the healthcare system can meet future needs effectively.',
+        icon: ClockIcon,
     },
 ]
 
@@ -200,12 +232,12 @@ export default function AdvocacyPage() {
                 <div className="relative isolate">
                     <div className="overflow-hidden">
                         <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-                            <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+                            <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
                                     <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
                                         Our Framework: The Model of Care
                                     </h1>
-                                    <p className="text-pretty mt-8 text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+                                    <p className="text-pretty mt-8 text-lg font-medium text-gray-500 sm:text-xl/8 lg:max-w-none">
                                         We&apos;ve designed an integrated, patient-centered system grounded in
                                         collaboration, holistic services, and learning at every level. It stands on four
                                         pillars, supported by enablers and foundational services.
@@ -232,7 +264,7 @@ export default function AdvocacyPage() {
                         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                                 {pillars.map(pillar => (
-                                    <div key={pillar.name} className="relative pl-16">
+                                    <div key={pillar.name} className="relative pl-12">
                                         <dt className="font-semibold text-gray-900">
                                             <div className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-lg bg-[#9C27B0]">
                                                 <pillar.icon className="h-6 w-6 text-white" />
@@ -274,9 +306,9 @@ export default function AdvocacyPage() {
                         />
                     </div>
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl lg:mx-0">
+                        <div className="mx-auto max-w-2xl lg:text-center">
                             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                Enablers of Care
+                                <div className="flex items-center justify-center gap-3">Enablers of Care</div>
                             </h2>
                             <p className="mt-6 text-lg/8 text-gray-700">
                                 These key enablers ensure our healthcare system operates effectively and delivers the
@@ -285,8 +317,13 @@ export default function AdvocacyPage() {
                         </div>
                         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             {enablers.map(enabler => (
-                                <div key={enabler.name}>
-                                    <dt className="font-semibold text-gray-900">{enabler.name}</dt>
+                                <div key={enabler.name} className="relative pl-12">
+                                    <dt className="font-semibold text-gray-900">
+                                        <div className="absolute left-0 top-0 z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-[#9C27B0]">
+                                            <enabler.icon className="h-5 w-5 text-white" />
+                                        </div>
+                                        {enabler.name}
+                                    </dt>
                                     <dd className="mt-1 text-gray-600">{enabler.description}</dd>
                                 </div>
                             ))}
@@ -297,9 +334,9 @@ export default function AdvocacyPage() {
                 {/* Foundational Supports section */}
                 <div className="py-24 sm:py-32">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl lg:mx-0">
+                        <div className="mx-auto max-w-2xl lg:text-center">
                             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                Foundational Supports
+                                <div className="flex items-center justify-center gap-3">Foundational Supports</div>
                             </h2>
                             <p className="mt-6 text-lg/8 text-gray-700">
                                 To address the root causes of health, we integrate essential services and supports that
@@ -308,8 +345,13 @@ export default function AdvocacyPage() {
                         </div>
                         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                             {foundationalSupports.map(support => (
-                                <div key={support.name}>
-                                    <dt className="font-semibold text-gray-900">{support.name}</dt>
+                                <div key={support.name} className="relative pl-12">
+                                    <dt className="font-semibold text-gray-900">
+                                        <div className="absolute left-0 top-0 z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-[#9C27B0]">
+                                            <support.icon className="h-5 w-5 text-white" />
+                                        </div>
+                                        {support.name}
+                                    </dt>
                                     <dd className="mt-1 text-gray-600">{support.description}</dd>
                                 </div>
                             ))}
@@ -320,9 +362,9 @@ export default function AdvocacyPage() {
                 {/* Learning Health System section */}
                 <div className="py-24 sm:py-32">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl lg:mx-0">
+                        <div className="mx-auto max-w-2xl lg:text-center">
                             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                A Learning Health System
+                                <div className="flex items-center justify-center gap-3">A Learning Health System</div>
                             </h2>
                             <p className="mt-6 text-lg/8 text-gray-700">
                                 Our system continuously evolves through data-driven insights and evidence-based
@@ -331,8 +373,13 @@ export default function AdvocacyPage() {
                         </div>
                         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                             {learningSystem.map(item => (
-                                <div key={item.name}>
-                                    <dt className="font-semibold text-gray-900">{item.name}</dt>
+                                <div key={item.name} className="relative pl-12">
+                                    <dt className="font-semibold text-gray-900">
+                                        <div className="absolute left-0 top-0 z-10 flex h-8 w-8 items-center justify-center rounded-lg bg-[#9C27B0]">
+                                            <item.icon className="h-5 w-5 text-white" />
+                                        </div>
+                                        {item.name}
+                                    </dt>
                                     <dd className="mt-1 text-gray-600">{item.description}</dd>
                                 </div>
                             ))}
@@ -343,7 +390,7 @@ export default function AdvocacyPage() {
                 {/* Call to action section */}
                 <CallToAction />
             </main>
-            <Footer />
+            <Footer showBorder={false} />
         </div>
     )
 }

@@ -7,7 +7,7 @@ import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Sign Up',
+    title: 'Sign Up - Doctors For Better Health',
 }
 
 export default function Register() {
@@ -18,7 +18,7 @@ export default function Register() {
                     <Logo className="h-10 w-auto" />
                 </Link>
             </div>
-            <h2 className="mt-20 text-lg font-semibold text-gray-900">Get started for free</h2>
+            <h2 className="mt-20 text-lg font-semibold text-gray-900">Join our healthcare coalition</h2>
             <p className="mt-2 text-sm text-gray-700">
                 Already registered?{' '}
                 <Link href="/login" className="font-medium text-blue-600 hover:underline">
@@ -46,10 +46,12 @@ export default function Register() {
                     required
                 />
                 <SelectField className="col-span-full" label="How did you hear about us?" name="referral_source">
-                    <option>AltaVista search</option>
-                    <option>Super Bowl commercial</option>
-                    <option>Our route 34 city bus ad</option>
-                    <option>The “Never Use This” podcast</option>
+                    <option>Healthcare provider referral</option>
+                    <option>Social media</option>
+                    <option>Community event</option>
+                    <option>News article</option>
+                    <option>Word of mouth</option>
+                    <option>Other</option>
                 </SelectField>
                 <div className="col-span-full">
                     <Button type="submit" variant="solid" color="blue" className="w-full">

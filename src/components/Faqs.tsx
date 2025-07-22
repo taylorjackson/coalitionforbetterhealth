@@ -106,7 +106,7 @@ export function Faqs() {
                 <div className="mt-8 flex justify-end">
                     <button
                         type="submit"
-                        className="rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#9C27B0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9C27B0]"
+                        className="rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#7B1FA2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9C27B0]"
                     >
                         Send Question
                     </button>

@@ -7,7 +7,7 @@ import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Sign In',
+    title: 'Sign In - Doctors For Better Health',
 }
 
 export default function Login() {
@@ -24,7 +24,7 @@ export default function Login() {
                 <Link href="/register" className="font-medium text-blue-600 hover:underline">
                     Sign up
                 </Link>{' '}
-                for a free trial.
+                to join our healthcare coalition.
             </p>
             <form action="#" className="mt-10 grid grid-cols-1 gap-y-8">
                 <TextField label="Email address" name="email" type="email" autoComplete="email" required />

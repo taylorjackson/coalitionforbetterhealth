@@ -47,13 +47,13 @@ export function CallToAction() {
                     <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                         <a
                             href="#"
-                            className="inline-flex rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                            className="inline-flex rounded-md bg-[#9C27B0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#7B1FA2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9C27B0]"
                         >
                             Join the Coalition
                         </a>
                         <a
                             href="#"
-                            className="inline-flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#9C27B0] shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                            className="inline-flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#9C27B0] shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         >
                             Donate Now
                         </a>
