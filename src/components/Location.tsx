@@ -7,7 +7,7 @@ export function Location() {
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <h2 className="text-left text-base/7 font-semibold text-[#9C27B0]">Contact Us</h2>
-                        <p className="text-balance mx-auto mt-2 max-w-lg text-left text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+                        <p className="text-balance mt-2 max-w-lg text-left text-3xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
                             Let&apos;s Work Together to Transform Care
                         </p>
                         <p className="mt-6 text-lg leading-8 text-gray-600">

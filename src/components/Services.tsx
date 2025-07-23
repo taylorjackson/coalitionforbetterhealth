@@ -1,4 +1,5 @@
 import { UserGroupIcon, DocumentTextIcon, AcademicCapIcon, BeakerIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const services = [
     {
@@ -82,12 +83,14 @@ export function Services() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-                                <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                                    <div className="flex h-full items-center justify-center">
-                                        <UserGroupIcon className="h-32 w-32 text-white/20" />
-                                    </div>
-                                </div>
+                            <div className="relative flex min-h-[20rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                                <Image
+                                    src="https://images.pexels.com/photos/6146704/pexels-photo-6146704.jpeg"
+                                    alt="Team-based primary care"
+                                    width={800}
+                                    height={600}
+                                    className="xxs:max-h-[20rem] h-full w-full max-w-[90%] rounded-[2rem] border border-gray-200 object-cover shadow-lg sm:max-h-[35rem]"
+                                />
                             </div>
                         </div>
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow outline outline-black/5 lg:rounded-l-[2rem]" />
@@ -108,8 +111,14 @@ export function Services() {
                                     {services[1].description}
                                 </p>
                             </div>
-                            <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                                <DocumentTextIcon className="h-24 w-24 text-[#9C27B0]/20" />
+                            <div className="relative flex min-h-[18rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                                <Image
+                                    src="https://images.pexels.com/photos/8898683/pexels-photo-8898683.jpeg"
+                                    alt={services[1].name}
+                                    width={600}
+                                    height={400}
+                                    className="h-full max-h-[14rem] w-full max-w-[90%] rounded-[2rem] border border-gray-200 object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow outline outline-black/5 max-lg:rounded-t-[2rem]" />
@@ -130,8 +139,14 @@ export function Services() {
                                     {services[2].description}
                                 </p>
                             </div>
-                            <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                                <AcademicCapIcon className="h-[min(152px,40cqw)] text-[#9C27B0]/20" />
+                            <div className="relative flex min-h-[18rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                                <Image
+                                    src="https://images.pexels.com/photos/6129649/pexels-photo-6129649.jpeg"
+                                    alt="Learning health system"
+                                    width={600}
+                                    height={400}
+                                    className="h-full max-h-[14rem] w-full max-w-[90%] rounded-[2rem] border border-gray-200 object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow outline outline-black/5" />
@@ -160,20 +175,14 @@ export function Services() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="relative min-h-[30rem] w-full grow">
-                                <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
-                                    <div className="flex bg-gray-900 outline outline-white/5">
-                                        <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
-                                            <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
-                                                Research
-                                            </div>
-                                            <div className="border-r border-gray-600/10 px-4 py-2">Innovation</div>
-                                        </div>
-                                    </div>
-                                    <div className="flex h-full items-center justify-center px-6 pb-14 pt-6">
-                                        <BeakerIcon className="h-32 w-32 text-white/20" />
-                                    </div>
-                                </div>
+                            <div className="relative flex min-h-[30rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                                <Image
+                                    src="https://images.pexels.com/photos/7722869/pexels-photo-7722869.jpeg"
+                                    alt="Research and innovation"
+                                    width={800}
+                                    height={600}
+                                    className="h-full max-h-[35rem] w-full max-w-[90%] rounded-[2rem] border border-gray-200 object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow outline outline-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]" />

@@ -56,7 +56,7 @@ export function PrimaryFeatures() {
                             className="w-[40rem] max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[48rem]"
                         />
                         {/* Overlay images in a more pleasing collage */}
-                        <div className="absolute -left-16 bottom-8 flex flex-col gap-6 sm:gap-8">
+                        <div className="xxs:hidden -left-16 bottom-8 flex flex-col gap-6 sm:absolute sm:gap-8">
                             <Image
                                 src="https://images.pexels.com/photos/8830496/pexels-photo-8830496.jpeg"
                                 alt="Patient care and support"
@@ -65,7 +65,7 @@ export function PrimaryFeatures() {
                                 className="w-56 rounded-lg border-4 border-white shadow-lg"
                             />
                         </div>
-                        <div className="absolute -right-10 top-56 flex flex-col gap-6 sm:gap-8">
+                        <div className="xxs:hidden -right-10 top-56 flex flex-col gap-6 sm:absolute sm:gap-8">
                             <Image
                                 src="https://images.pexels.com/photos/6436252/pexels-photo-6436252.jpeg"
                                 alt="Medical innovation and technology"

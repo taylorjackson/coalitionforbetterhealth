@@ -14,12 +14,13 @@ export function Header() {
     // Calculate header position based on scroll
     // When banner is completely hidden (scrollY >= 150), header moves to top
     const fadeEnd = 150
-    const headerTop = scrollY >= fadeEnd ? '0' : '2.5rem' // 2.5rem = top-10
+    const isBannerVisible = scrollY < fadeEnd
 
     return (
         <header
-            className="fixed left-0 right-0 z-40 border-b border-gray-200/50 bg-white/95 backdrop-blur-sm transition-all duration-300"
-            style={{ top: headerTop }}
+            className={`fixed left-0 right-0 z-40 border-b border-gray-200/50 bg-white/95 backdrop-blur-sm transition-all duration-300 ${
+                isBannerVisible ? 'top-16 sm:top-10' : 'top-0'
+            }`}
         >
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">

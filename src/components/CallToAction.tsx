@@ -36,7 +36,7 @@ export function CallToAction() {
                     </defs>
                 </svg>
             </div>
-            <div className="relative mx-auto my-12 max-w-7xl py-24 sm:py-36 lg:px-8 lg:py-44">
+            <div className="relative mx-auto my-12 max-w-7xl py-16 sm:py-36 lg:px-8 lg:py-44">
                 <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
                     <h2 className="text-base font-semibold leading-7 text-[#9C27B0]">
                         Want to improve health care with us?

@@ -274,7 +274,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Team section */}
-                <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
+                {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             Our Team
@@ -304,7 +304,7 @@ export default function AboutPage() {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
             </main>
 
             <div className="mt-24 sm:mt-32">

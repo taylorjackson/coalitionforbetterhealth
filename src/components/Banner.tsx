@@ -19,8 +19,11 @@ export function Banner() {
     }
 
     return (
-        <div className="fixed left-0 right-0 top-0 z-50 max-h-10 transition-opacity duration-300" style={{ opacity }}>
-            <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div
+            className="fixed left-0 right-0 top-0 z-50 max-h-16 transition-opacity duration-300 sm:max-h-10"
+            style={{ opacity }}
+        >
+            <div className="relative isolate flex flex-col items-center gap-x-6 gap-y-1 overflow-hidden bg-gray-50 px-6 py-2.5 sm:flex-row sm:gap-y-0 sm:px-3.5 sm:before:flex-1">
                 <div
                     className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
                     aria-hidden="true"
@@ -45,14 +48,18 @@ export function Banner() {
                         }}
                     />
                 </div>
-                <div className="flex max-w-7xl flex-wrap items-center gap-y-2 md:gap-x-[12rem] lg:gap-x-[25rem]  xl:gap-x-[45rem]">
-                    <div className="text-sm leading-6 text-gray-900">
+                <div className="flex max-w-7xl flex-col flex-wrap items-center gap-y-2 sm:flex-row md:gap-x-[12rem] lg:gap-x-[25rem]  xl:gap-x-[45rem]">
+                    <div className="text-center text-sm leading-6 text-gray-900 sm:text-left">
                         <strong className="px-1 font-semibold">125-8120 Cook Rd, Richmond B.C.</strong>
-                        <svg viewBox="0 0 2 2" className="mx-2 inline h-1 w-1 fill-current md:mx-4" aria-hidden="true">
+                        <svg
+                            viewBox="0 0 2 2"
+                            className="mx-2 hidden h-1 w-1 fill-current sm:inline md:mx-4"
+                            aria-hidden="true"
+                        >
                             <circle cx={1} cy={1} r={1} />
                         </svg>
 
-                        <span className="px-1">info@coalitionforbetterhealth.ca</span>
+                        <span className="block px-1 sm:inline">info@coalitionforbetterhealth.ca</span>
                     </div>
                 </div>
 
