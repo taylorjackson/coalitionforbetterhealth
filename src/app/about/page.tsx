@@ -134,7 +134,7 @@ export default function AboutPage() {
                         />
                     </div>
                     <div className="overflow-hidden">
-                        <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+                        <div className="xxs:pb-20 xxs:pt-48 mx-auto max-w-7xl px-6 pt-40 sm:pb-32 sm:pt-60 lg:px-8 lg:pt-32">
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
                                     <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
@@ -240,10 +240,10 @@ export default function AboutPage() {
                 <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
                     <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                        src="https://images.pexels.com/photos/9054999/pexels-photo-9054999.jpeg"
                         width={2832}
-                        height={1133}
-                        className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+                        height={1233}
+                        className="aspect-[5/2.2] w-full object-cover object-top xl:rounded-3xl"
                     />
                 </div>
 

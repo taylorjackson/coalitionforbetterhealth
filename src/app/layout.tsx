@@ -6,10 +6,10 @@ import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: {
-        template: '%s - Doctors For Better Health',
-        default: 'Doctors For Better Health',
+        template: '%s - Coalition for Better Health',
+        default: 'Coalition for Better Health',
     },
-    description: 'Doctors For Better Health is a coalition designed to improve health care in British Columbia.',
+    description: 'Coalition for Better Health is a coalition designed to improve health care in British Columbia.',
 }
 
 const inter = Inter({

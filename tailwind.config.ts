@@ -2,9 +2,16 @@ import formsPlugin from '@tailwindcss/forms'
 import headlessuiPlugin from '@headlessui/tailwindcss'
 import { type Config } from 'tailwindcss'
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
+        screens: {
+            xxs: '320px',
+            xs: '375px',
+            ...defaultTheme.screens,
+        },
         fontSize: {
             xs: ['0.75rem', { lineHeight: '1rem' }],
             sm: ['0.875rem', { lineHeight: '1.5rem' }],

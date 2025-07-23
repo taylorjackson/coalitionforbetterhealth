@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 // import { type Metadata } from 'next'
 
 // export const metadata: Metadata = {
-//     title: 'Sign In - Doctors For Better Health',
+//     title: 'Sign In - Coalition for Better Health',
 // }
 
 export default function Login() {

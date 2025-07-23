@@ -83,7 +83,7 @@ export function Services() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="relative flex min-h-[20rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                            <div className="relative flex min-h-[20rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm max-lg:pb-6 max-lg:pt-6">
                                 <Image
                                     src="https://images.pexels.com/photos/6146704/pexels-photo-6146704.jpeg"
                                     alt="Team-based primary care"
@@ -175,7 +175,7 @@ export function Services() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="relative flex min-h-[30rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                            <div className="relative flex min-h-[30rem] w-full grow items-center justify-center [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm max-lg:pb-6 max-lg:pt-6">
                                 <Image
                                     src="https://images.pexels.com/photos/7722869/pexels-photo-7722869.jpeg"
                                     alt="Research and innovation"

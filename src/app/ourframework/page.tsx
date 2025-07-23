@@ -189,7 +189,10 @@ export default function AdvocacyPage() {
             <main className="isolate">
                 {/* Background grid and blob for entire page */}
                 <div className="relative isolate -z-10">
-                    <svg className="absolute inset-x-0 top-0 -z-10 h-full w-full stroke-gray-200" aria-hidden="true">
+                    <svg
+                        className="absolute inset-x-0 top-0 -z-10 h-full w-full overflow-hidden stroke-gray-200"
+                        aria-hidden="true"
+                    >
                         <defs>
                             <pattern
                                 id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
@@ -216,11 +219,11 @@ export default function AdvocacyPage() {
                         />
                     </svg>
                     <div
-                        className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+                        className="absolute right-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
                         aria-hidden="true"
                     >
                         <div
-                            className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                            className="aspect-[801/1036] w-[20rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:w-[35rem] lg:w-[50.0625rem]"
                             style={{
                                 clipPath:
                                     'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
@@ -232,7 +235,7 @@ export default function AdvocacyPage() {
                 {/* Hero section */}
                 <div className="relative isolate">
                     <div className="overflow-hidden">
-                        <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+                        <div className="xxs:pb-20 xxs:pt-32 mx-auto max-w-7xl px-6 pt-40 sm:pb-16 sm:pt-60 lg:px-8 lg:pt-32">
                             <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
                                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
                                     <h1 className="text-pretty pt-28 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
@@ -297,11 +300,11 @@ export default function AdvocacyPage() {
                 <div className="relative py-24 sm:py-32">
                     {/* Reverse blob on left side */}
                     <div
-                        className="absolute left-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+                        className="absolute left-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-ml-24 lg:ml-24 xl:ml-48"
                         aria-hidden="true"
                     >
                         <div
-                            className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#9089fc] to-[#ff80b5] opacity-30"
+                            className="aspect-[801/1036] w-[20rem] bg-gradient-to-tr from-[#9089fc] to-[#ff80b5] opacity-30 sm:w-[35rem] lg:w-[50.0625rem]"
                             style={{
                                 clipPath:
                                     'polygon(36.9% 70.5%, 0% 82.9%, 23.4% 97%, 51.6% 100%, 55.4% 95.3%, 45.5% 74.7%, 40.2% 51%, 44.8% 42.2%, 55.6% 42.8%, 72.2% 52.1%, 64.9% 18.5%, 100% 2.3%, 60.8% 0%, 64.8% 18.6%, 2.8% 47.2%, 36.9% 70.5%)',
@@ -366,11 +369,11 @@ export default function AdvocacyPage() {
                 <div className="relative py-24 sm:py-32">
                     {/* Blob on right side */}
                     <div
-                        className="absolute right-0 top-0 -z-10 -mr-24 transform-gpu overflow-hidden blur-3xl lg:mr-24 xl:mr-48"
+                        className="absolute right-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
                         aria-hidden="true"
                     >
                         <div
-                            className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                            className="aspect-[801/1036] w-[20rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:w-[35rem] lg:w-[50.0625rem]"
                             style={{
                                 clipPath:
                                     'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
