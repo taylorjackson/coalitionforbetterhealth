@@ -153,7 +153,7 @@ export default function AboutPage() {
                                         <div className="relative">
                                             <Image
                                                 alt=""
-                                                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                src="https://images.pexels.com/photos/3846038/pexels-photo-3846038.jpeg"
                                                 width={176}
                                                 height={264}
                                                 className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -165,7 +165,7 @@ export default function AboutPage() {
                                         <div className="relative">
                                             <Image
                                                 alt=""
-                                                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                src="https://drcarolinewang.ca//_next/static/media/headshot.81d9cc74.jpg"
                                                 width={176}
                                                 height={264}
                                                 className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -197,7 +197,7 @@ export default function AboutPage() {
                                         <div className="relative">
                                             <Image
                                                 alt=""
-                                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                                                src="https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg"
                                                 width={176}
                                                 height={264}
                                                 className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
