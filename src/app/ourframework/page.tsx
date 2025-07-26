@@ -345,8 +345,8 @@ export default function AdvocacyPage() {
                                 <div className="flex items-center justify-center gap-3">Foundational Supports</div>
                             </h2>
                             <p className="mt-6 text-lg/8 text-gray-700">
-                                To address the root causes of health, we integrate essential services and supports that
-                                create the foundation for healthy communities.
+                                To address health determinants and root causes of illness, we integrate essential
+                                services and supports that create the foundation for healthy communities.
                             </p>
                         </div>
                         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
