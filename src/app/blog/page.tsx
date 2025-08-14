@@ -1,7 +1,6 @@
-import { getPaginatedBlogPosts } from '@/lib/blog'
+import { getAllBlogPosts } from '@/lib/blog'
 import { format } from 'date-fns'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { Banner } from '@/components/Banner'
 import { Header } from '@/components/Header'
@@ -13,12 +12,7 @@ interface BlogPageProps {
 }
 
 export default function BlogPage({ searchParams }: BlogPageProps) {
-    const currentPage = searchParams.page ? parseInt(searchParams.page) : 1
-    const { posts, pagination } = getPaginatedBlogPosts(currentPage, 10)
-
-    if (currentPage > pagination.totalPages && pagination.totalPages > 0) {
-        notFound()
-    }
+    const posts = getAllBlogPosts()
 
     return (
         <>
@@ -75,47 +69,6 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
                             </article>
                         ))}
                     </div>
-
-                    {/* Pagination */}
-                    {pagination.totalPages > 1 && (
-                        <div className="mt-16 flex items-center justify-center">
-                            <nav className="flex items-center space-x-2" aria-label="Pagination">
-                                {pagination.hasPrevPage && (
-                                    <Link
-                                        href={`/blog?page=${pagination.currentPage - 1}`}
-                                        className="relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                                    >
-                                        <span className="sr-only">Previous</span>
-                                        &lt;
-                                    </Link>
-                                )}
-
-                                {Array.from({ length: pagination.totalPages }, (_, i) => i + 1).map(page => (
-                                    <Link
-                                        key={page}
-                                        href={`/blog?page=${page}`}
-                                        className={`relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold ${
-                                            page === pagination.currentPage
-                                                ? 'bg-[#9C27B0] text-white ring-1 ring-inset ring-[#9C27B0]'
-                                                : 'text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-                                        }`}
-                                    >
-                                        {page}
-                                    </Link>
-                                ))}
-
-                                {pagination.hasNextPage && (
-                                    <Link
-                                        href={`/blog?page=${pagination.currentPage + 1}`}
-                                        className="relative inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                                    >
-                                        <span className="sr-only">Next</span>
-                                        &gt;
-                                    </Link>
-                                )}
-                            </nav>
-                        </div>
-                    )}
                 </div>
             </div>
             <BlogCallToAction />
