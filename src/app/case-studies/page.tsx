@@ -32,9 +32,9 @@ export default function CaseStudiesPage({ searchParams }: CaseStudiesPageProps) 
                             Real Results, Real Impact
                         </p>
                         <p className="mt-6 text-lg/8 text-gray-700">
-                            Explore detailed case studies showcasing successful healthcare transformations, 
-                            innovative care models, and measurable improvements in patient outcomes across 
-                            British Columbia and beyond.
+                            Explore detailed case studies showcasing successful healthcare transformations, innovative
+                            care models, and measurable improvements in patient outcomes across British Columbia and
+                            beyond.
                         </p>
                     </div>
 
@@ -80,15 +80,17 @@ export default function CaseStudiesPage({ searchParams }: CaseStudiesPageProps) 
                                                 {caseStudy.title}
                                             </Link>
                                         </h3>
-                                        <p className="mt-5 text-base leading-7 text-gray-600">
-                                            {caseStudy.excerpt}
-                                        </p>
+                                        <p className="mt-5 text-base leading-7 text-gray-600">{caseStudy.excerpt}</p>
                                         {caseStudy.outcomes && caseStudy.outcomes.length > 0 && (
                                             <div className="mt-6">
-                                                <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Outcomes:</h4>
-                                                <ul className="list-disc list-inside space-y-1">
+                                                <h4 className="mb-2 text-sm font-semibold text-gray-900">
+                                                    Key Outcomes:
+                                                </h4>
+                                                <ul className="list-inside list-disc space-y-1">
                                                     {caseStudy.outcomes.map((outcome, index) => (
-                                                        <li key={index} className="text-sm text-gray-600">{outcome}</li>
+                                                        <li key={index} className="text-sm text-gray-600">
+                                                            {outcome}
+                                                        </li>
                                                     ))}
                                                 </ul>
                                             </div>
