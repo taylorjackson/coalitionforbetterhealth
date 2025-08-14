@@ -49,6 +49,9 @@ export function Header() {
                     <a href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
                         Blog
                     </a>
+                    <a href="/case-studies" className="text-sm font-semibold leading-6 text-gray-900">
+                        Case Studies
+                    </a>
                     <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
                         About
                     </a>
@@ -93,6 +96,12 @@ export function Header() {
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                                     >
                                         Blog
+                                    </a>
+                                    <a
+                                        href="/case-studies"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                                    >
+                                        Case Studies
                                     </a>
                                     <a
                                         href="/about"
