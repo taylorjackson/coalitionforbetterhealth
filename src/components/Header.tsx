@@ -46,6 +46,9 @@ export function Header() {
                     <a href="/ourframework" className="text-sm font-semibold leading-6 text-gray-900">
                         Our Framework
                     </a>
+                    <a href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
+                        Blog
+                    </a>
                     <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
                         About
                     </a>
@@ -84,6 +87,12 @@ export function Header() {
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                                     >
                                         Our Framework
+                                    </a>
+                                    <a
+                                        href="/blog"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                                    >
+                                        Blog
                                     </a>
                                     <a
                                         href="/about"

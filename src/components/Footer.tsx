@@ -2,6 +2,7 @@ const navigation = {
     main: [
         { name: 'Home', href: '/' },
         { name: 'Our Framework', href: '/ourframework' },
+        { name: 'Blog', href: '/blog' },
         { name: 'About', href: '/about' },
     ],
 }
