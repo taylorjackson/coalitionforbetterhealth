@@ -30,7 +30,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <>
             <Banner />
             <Header />
-            <div className="bg-white">
+            <div className="bg-white pt-36 sm:pt-32">
                 {/* Hero Section */}
                 <div className="relative">
                     <Image
@@ -42,7 +42,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center text-white">
+                        <div className="mx-20 text-center text-white">
                             <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">{post.title}</h1>
                         </div>
                     </div>
