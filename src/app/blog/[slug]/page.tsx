@@ -7,6 +7,7 @@ import MDXContent from '@/components/MDXContent'
 import { Banner } from '@/components/Banner'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { ScrollToTop } from '@/components/ScrollToTop'
 
 interface BlogPostPageProps {
     params: { slug: string }
@@ -28,6 +29,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
     return (
         <>
+            <ScrollToTop />
             <Banner />
             <Header />
             <div className="bg-white pt-36 sm:pt-32">
