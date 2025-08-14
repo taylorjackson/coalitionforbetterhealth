@@ -54,11 +54,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <div className="mx-auto max-w-4xl px-6 py-16 lg:px-8">
                     {/* Metadata */}
                     <div className="mb-12 border-b border-gray-200 pb-8">
-                        <div className="flex items-center justify-between text-sm text-gray-500">
-                            <div className="flex items-center space-x-4">
-                                <span>By {post.author}</span>
-                                <span>•</span>
-                                <time dateTime={post.date}>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
+                        <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
+                            <div className="grid grid-cols-1 gap-2 text-sm text-gray-500 md:grid-cols-2 md:gap-4">
+                                <div className="flex items-center space-x-2">
+                                    <span>By {post.author}</span>
+                                    <span>•</span>
+                                    <time dateTime={post.date}>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
+                                </div>
                             </div>
                             <Link
                                 href="/blog"

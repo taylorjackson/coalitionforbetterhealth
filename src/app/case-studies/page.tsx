@@ -48,23 +48,24 @@ export default function CaseStudiesPage({ searchParams }: CaseStudiesPageProps) 
                                     </Link>
                                 </div>
                                 <div className="max-w-4xl">
-                                    <div className="mt-8 flex items-center gap-x-4 text-xs">
-                                        <time dateTime={caseStudy.date} className="text-gray-500">
-                                            {format(new Date(caseStudy.date), 'MMMM d, yyyy')}
-                                        </time>
-                                        <span className="text-gray-500">•</span>
-                                        <span className="text-gray-500">{caseStudy.author}</span>
-                                        {caseStudy.client && (
-                                            <>
-                                                <span className="text-gray-500">•</span>
-                                                <span className="text-gray-500">{caseStudy.client}</span>
-                                            </>
-                                        )}
-                                        {caseStudy.duration && (
-                                            <>
-                                                <span className="text-gray-500">•</span>
-                                                <span className="text-gray-500">{caseStudy.duration}</span>
-                                            </>
+                                    <div className="mt-8 grid grid-cols-1 gap-2 text-xs text-gray-500 md:grid-cols-2 md:gap-4">
+                                        <div className="flex items-center space-x-2">
+                                            <time dateTime={caseStudy.date}>
+                                                {format(new Date(caseStudy.date), 'MMMM d, yyyy')}
+                                            </time>
+                                            <span>•</span>
+                                            <span>{caseStudy.author}</span>
+                                        </div>
+                                        {(caseStudy.client || caseStudy.duration) && (
+                                            <div className="flex items-center space-x-2">
+                                                {caseStudy.client && (
+                                                    <>
+                                                        <span>{caseStudy.client}</span>
+                                                        {caseStudy.duration && <span>•</span>}
+                                                    </>
+                                                )}
+                                                {caseStudy.duration && <span>{caseStudy.duration}</span>}
+                                            </div>
                                         )}
                                     </div>
                                     <div className="group relative">

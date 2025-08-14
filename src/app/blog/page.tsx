@@ -47,12 +47,14 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
                                     </Link>
                                 </div>
                                 <div className="max-w-xl">
-                                    <div className="mt-8 flex items-center gap-x-4 text-xs">
-                                        <time dateTime={post.date} className="text-gray-500">
-                                            {format(new Date(post.date), 'MMMM d, yyyy')}
-                                        </time>
-                                        <span className="text-gray-500">•</span>
-                                        <span className="text-gray-500">{post.author}</span>
+                                    <div className="mt-8 grid grid-cols-1 gap-2 text-xs text-gray-500 md:grid-cols-2 md:gap-4">
+                                        <div className="flex items-center space-x-2">
+                                            <time dateTime={post.date}>
+                                                {format(new Date(post.date), 'MMMM d, yyyy')}
+                                            </time>
+                                            <span>•</span>
+                                            <span>{post.author}</span>
+                                        </div>
                                     </div>
                                     <div className="group relative">
                                         <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
